@@ -1,497 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaworlds Recipe Book</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Breaworlds Recipe Book</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
             <h1>Breaworlds Recipe Book</h1>
             <input type="text" id="searchBar" placeholder="Search recipes...">
-        </header>
-
-        <nav>
+         </header>
+         <nav>
             <ul>
-                <li><a href="#basic-blocks">Basic Coloured Blocks</a></li>
-                <li><a href="#basic-backgrounds">Basic Coloured Backgrounds</a></li>
-                <li><a href="#wooden-items">Wooden Items</a></li>
-                <li><a href="#iron-items">Iron Items</a></li>
-                <li><a href="#metal-panels">Metal Panels</a></li>
+               <li><a href="#basic-blocks">Basic Coloured Blocks</a></li>
+               <li><a href="#basic-backgrounds">Basic Coloured Backgrounds</a></li>
+               <li><a href="#wooden-items">Wooden Items</a></li>
+               <li><a href="#iron-items">Iron Items</a></li>
+               <li><a href="#metal-panels">Metal Panels</a></li>
+               <li><a href="#plastic-blocks">Plastic Blocks</a></li>
             </ul>
-        </nav>
-
-        <main>
+         </nav>
+         <main>
             <section id="basic-blocks" class="category">
-                <h2>Basic Coloured Blocks</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card" data-tags="red block stone brick lava">
-                        <h3>Red Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Brick</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Lava</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="orange block yellow block black block">
-                        <h3>Orange Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Yellow Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Black Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="yellow block white block red block">
-                        <h3>Yellow Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">White Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Red Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="green block red block yellow block">
-                        <h3>Green Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Red Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Yellow Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="blue block yellow block green block">
-                        <h3>Blue Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Yellow Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Green Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="purple block blue block black block">
-                        <h3>Purple Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Blue Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Black Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="pink block white block blue block">
-                        <h3>Pink Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">White Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Blue Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="white block stone brick glass block">
-                        <h3>White Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Brick</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Glass Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="grey block stone brick stone block">
-                        <h3>Grey Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Brick</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Stone Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="brown block stone brick dirt block">
-                        <h3>Brown Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Brick</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Dirt Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="black block stone brick cave background">
-                        <h3>Black Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Brick</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                </div>
+               <h2>Basic Coloured Blocks</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="red block stone brick lava">
+                     <h3>Red Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Lava</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="orange block yellow block black block">
+                     <h3>Orange Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Yellow Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Black Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="yellow block white block red block">
+                     <h3>Yellow Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Red Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="green block red block yellow block">
+                     <h3>Green Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Red Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Yellow Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="blue block yellow block green block">
+                     <h3>Blue Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Yellow Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Green Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="purple block blue block black block">
+                     <h3>Purple Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Blue Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Black Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="pink block white block blue block">
+                     <h3>Pink Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Blue Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="white block stone brick glass block">
+                     <h3>White Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Glass Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="grey block stone brick stone block">
+                     <h3>Grey Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Stone Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="brown block stone brick dirt block">
+                     <h3>Brown Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Dirt Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="black block stone brick cave background">
+                     <h3>Black Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+               </div>
             </section>
-
             <section id="basic-backgrounds" class="category">
-                <h2>Basic Coloured Backgrounds</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card" data-tags="red background red block cave background">
-                        <h3>Red Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Red Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="orange background orange block cave background">
-                        <h3>Orange Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Orange Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="yellow background yellow block cave background">
-                        <h3>Yellow Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Yellow Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="green background green block cave background">
-                        <h3>Green Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Green Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="blue background blue block cave background">
-                        <h3>Blue Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Blue Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="purple background purple block cave background">
-                        <h3>Purple Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Purple Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="pink background pink block cave background">
-                        <h3>Pink Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Pink Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="white background white block cave background">
-                        <h3>White Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">White Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="grey background grey block cave background">
-                        <h3>Grey Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Grey Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="brown background brown block cave background">
-                        <h3>Brown Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Brown Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="black background black block cave background">
-                        <h3>Black Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Black Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                </div>
+               <h2>Basic Coloured Backgrounds</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="red background red block cave background">
+                     <h3>Red Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Red Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="orange background orange block cave background">
+                     <h3>Orange Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Orange Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="yellow background yellow block cave background">
+                     <h3>Yellow Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Yellow Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="green background green block cave background">
+                     <h3>Green Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Green Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="blue background blue block cave background">
+                     <h3>Blue Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Blue Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="purple background purple block cave background">
+                     <h3>Purple Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Purple Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="pink background pink block cave background">
+                     <h3>Pink Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Pink Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="white background white block cave background">
+                     <h3>White Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="grey background grey block cave background">
+                     <h3>Grey Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Grey Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="brown background brown block cave background">
+                     <h3>Brown Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Brown Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="black background black block cave background">
+                     <h3>Black Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Black Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+               </div>
             </section>
-            
             <section id="wooden-items" class="category">
-                <h2>Wooden Items</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card" data-tags="wooden block dirt block lava block">
-                        <h3>Wooden Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Dirt Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Lava Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden background wooden block cave background">
-                        <h3>Wooden Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Cave Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden door orange block wooden block">
-                        <h3>Wooden Door</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Orange Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden platform wooden block brown background">
-                        <h3>Wooden Platform</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Brown Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden sign wooden block grey block">
-                        <h3>Wooden Sign</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Grey Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden entrance wooden block wooden door">
-                        <h3>Wooden Entrance</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Door</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden ladder wooden block platform">
-                        <h3>Wooden Ladder</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Platform</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden chair wooden block wooden sign">
-                        <h3>Wooden Chair</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Sign</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden table wooden block wooden entrance">
-                        <h3>Wooden Table</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Entrance</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden chandelier wooden block traffic light">
-                        <h3>Wooden Chandelier</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Traffic Light</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden window wooden block glass block">
-                        <h3>Wooden Window</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Glass Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden pickaxe wooden block stone block">
-                        <h3>Wooden Pickaxe</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Stone Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden bookcase wooden block wooden table">
-                        <h3>Wooden Bookcase</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Table</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="wooden bed wooden block wooden chair">
-                        <h3>Wooden Bed</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Wooden Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Chair</span>
-                        </div>
-                    </div>
-                </div>
+               <h2>Wooden Items</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="wooden block dirt block lava block">
+                     <h3>Wooden Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Dirt Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Lava Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden background wooden block cave background">
+                     <h3>Wooden Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Cave Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden door orange block wooden block">
+                     <h3>Wooden Door</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Orange Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden platform wooden block brown background">
+                     <h3>Wooden Platform</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Brown Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden sign wooden block grey block">
+                     <h3>Wooden Sign</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Grey Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden entrance wooden block wooden door">
+                     <h3>Wooden Entrance</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Door</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden ladder wooden block platform">
+                     <h3>Wooden Ladder</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Platform</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden chair wooden block wooden sign">
+                     <h3>Wooden Chair</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Sign</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden table wooden block wooden entrance">
+                     <h3>Wooden Table</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Entrance</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden chandelier wooden block traffic light">
+                     <h3>Wooden Chandelier</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Traffic Light</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden window wooden block glass block">
+                     <h3>Wooden Window</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Glass Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden pickaxe wooden block stone block">
+                     <h3>Wooden Pickaxe</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Stone Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden bookcase wooden block wooden table">
+                     <h3>Wooden Bookcase</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Table</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="wooden bed wooden block wooden chair">
+                     <h3>Wooden Bed</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Chair</span>
+                     </div>
+                  </div>
+               </div>
             </section>
-            
             <section id="iron-items" class="category">
-                <h2>Iron Items</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card" data-tags="iron block stone block grey block">
-                        <h3>Iron Block</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Stone Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Grey Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron background iron block wooden background">
-                        <h3>Iron Background</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Background</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron door iron block wooden door">
-                        <h3>Iron Door</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Door</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron platform iron block wooden platform">
-                        <h3>Iron Platform</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Platform</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron entrance iron block wooden entrance">
-                        <h3>Iron Entrance</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Entrance</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron ladder iron block wooden ladder">
-                        <h3>Iron Ladder</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Wooden Ladder</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="iron window iron block plastic window">
-                        <h3>Iron Window</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Iron Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Plastic Window</span>
-                        </div>
-                    </div>
-                </div>
+               <h2>Iron Items</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="iron block stone block grey block">
+                     <h3>Iron Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Grey Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron background iron block wooden background">
+                     <h3>Iron Background</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Background</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron door iron block wooden door">
+                     <h3>Iron Door</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Door</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron platform iron block wooden platform">
+                     <h3>Iron Platform</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Platform</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron entrance iron block wooden entrance">
+                     <h3>Iron Entrance</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Entrance</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron ladder iron block wooden ladder">
+                     <h3>Iron Ladder</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Ladder</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="iron window iron block plastic window">
+                     <h3>Iron Window</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Window</span>
+                     </div>
+                  </div>
+               </div>
             </section>
-            
             <section id="metal-panels" class="category">
-                <h2>Metal Panels</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card" data-tags="red metal panel red block iron block">
-                        <h3>Red Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Red Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="orange metal panel orange block iron block">
-                        <h3>Orange Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Orange Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="yellow metal panel yellow block iron block">
-                        <h3>Yellow Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Yellow Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="green metal panel green block iron block">
-                        <h3>Green Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Green Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="blue metal panel blue block iron block">
-                        <h3>Blue Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Blue Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="purple metal panel purple block iron block">
-                        <h3>Purple Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Purple Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="pink metal panel pink block iron block">
-                        <h3>Pink Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Pink Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="white metal panel white block iron block">
-                        <h3>White Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">White Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="grey metal panel grey block iron block">
-                        <h3>Grey Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Grey Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="brown metal panel brown block iron block">
-                        <h3>Brown Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Brown Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                    <div class="recipe-card" data-tags="black metal panel black block iron block">
-                        <h3>Black Metal Panel</h3>
-                        <div class="recipe-ingredients">
-                            <span class="ingredient">Black Block</span>
-                            <span class="plus">+</span>
-                            <span class="ingredient">Iron Block</span>
-                        </div>
-                    </div>
-                </div>
+               <h2>Metal Panels</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="red metal panel red block iron block">
+                     <h3>Red Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Red Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="orange metal panel orange block iron block">
+                     <h3>Orange Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Orange Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="yellow metal panel yellow block iron block">
+                     <h3>Yellow Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Yellow Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="green metal panel green block iron block">
+                     <h3>Green Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Green Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="blue metal panel blue block iron block">
+                     <h3>Blue Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Blue Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="purple metal panel purple block iron block">
+                     <h3>Purple Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Purple Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="pink metal panel pink block iron block">
+                     <h3>Pink Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Pink Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="white metal panel white block iron block">
+                     <h3>White Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="grey metal panel grey block iron block">
+                     <h3>Grey Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Grey Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="brown metal panel brown block iron block">
+                     <h3>Brown Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Brown Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="black metal panel black block iron block">
+                     <h3>Black Metal Panel</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Black Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Block</span>
+                     </div>
+                  </div>
+               </div>
             </section>
-        </main>
-
-        <footer>
+            <section id="plastic-blocks" class="category">
+               <h2>Plastic Blocks</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="red plastic block red block plastic block">
+                     <h3>Red Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Red Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="orange plastic block orange block plastic block">
+                     <h3>Orange Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Orange Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="yellow plastic block yellow block plastic block">
+                     <h3>Yellow Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Yellow Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="green plastic block green block plastic block">
+                     <h3>Green Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Green Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="blue plastic block blue block plastic block">
+                     <h3>Blue Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Blue Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="purple plastic block purple block plastic block">
+                     <h3>Purple Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Purple Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="pink plastic block pink block plastic block">
+                     <h3>Pink Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Pink Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="white plastic block white block plastic block">
+                     <h3>White Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="grey plastic block grey block plastic block">
+                     <h3>Grey Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Grey Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="brown plastic block brown block plastic block">
+                     <h3>Brown Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Brown Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="black plastic block black block plastic block">
+                     <h3>Black Plastic Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Black Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Plastic Block</span>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer>
             <p>Unofficial Breaworlds Recipe Guide</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+         </footer>
+      </div>
+      <script src="script.js"></script>
+   </body>
 </html>
