@@ -21,17 +21,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let firstMatch = null;
+        let exactMatch = null;
         recipeCards.forEach(card => {
             const tags = card.dataset.tags.toLowerCase();
             if (tags.includes(searchTerm)) {
                 card.style.display = 'block';
+                const cardTitle = card.querySelector('h3').textContent.trim().toLowerCase();
+                // Save the first matched card (fallback)
                 if (!firstMatch) {
                     firstMatch = card;
+                }
+                // If the title exactly matches the search term, prioritize it
+                if (cardTitle === searchTerm) {
+                    exactMatch = card;
                 }
             } else {
                 card.style.display = 'none';
             }
         });
+
+        // Prioritize an exact match if it exists
+        if (exactMatch) {
+            firstMatch = exactMatch;
+        }
 
         if (scrollTimeout) {
             clearTimeout(scrollTimeout);
@@ -68,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Allow the menu to collapse before scrolling
                 categoriesList.classList.remove('visible');
                 setTimeout(() => {
-                    // Calculate the target's offset from the top
                     const targetOffset = targetSection.getBoundingClientRect().top + window.pageYOffset;
                     window.scrollTo({
                         top: targetOffset,
