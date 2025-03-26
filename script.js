@@ -65,9 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = link.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Allow the menu to collapse before scrolling
+                categoriesList.classList.remove('visible');
+                setTimeout(() => {
+                    // Calculate the target's offset from the top
+                    const targetOffset = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: targetOffset,
+                        behavior: 'smooth'
+                    });
+                }, 100); // Delay of 100ms before scrolling
             }
-            categoriesList.classList.remove('visible');
         });
     });
 });
