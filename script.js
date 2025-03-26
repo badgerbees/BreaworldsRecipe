@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBar.addEventListener('input', () => {
         const searchTerm = searchBar.value.toLowerCase();
         lastSearchTerm = searchTerm;
+
+        // If the search term is empty, show all cards and cancel scrolling
+        if (searchTerm.trim() === '') {
+            recipeCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            return; // Do not scroll when search is empty
+        }
+
         let firstMatch = null;
 
         recipeCards.forEach(card => {
@@ -27,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Wait 700ms after input stops before scrolling
         scrollTimeout = setTimeout(() => {
-            // Only scroll if the search term hasn't changed
+            // Only scroll if the search term hasn't changed and we have a match
             if (searchTerm === lastSearchTerm && firstMatch) {
                 const parentCategory = firstMatch.closest('.category');
                 if (parentCategory) {
