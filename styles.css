@@ -134,3 +134,35 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Category Toggle Adjustments */
+
+/* Hide the category list by default */
+#categories-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* When visible, display the list */
+#categories-list.visible {
+    display: block;
+}
+
+/* Style for the toggle button */
+#toggle-categories {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Hover effect for the toggle button */
+#toggle-categories:hover {
+    background-color: #3498db;
+}
