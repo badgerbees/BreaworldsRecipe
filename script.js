@@ -48,26 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 700);
     });
-
-    // Add click event listeners for all elements with the "ingredient" class
-    const ingredientElements = document.querySelectorAll('.ingredient');
-    ingredientElements.forEach(ingredient => {
-        ingredient.addEventListener('click', () => {
-            // Get the text of the clicked ingredient and normalize it
-            const searchName = ingredient.textContent.trim().toLowerCase();
-            let foundCard = null;
-            recipeCards.forEach(card => {
-                const cardTitle = card.querySelector('h3').textContent.trim().toLowerCase();
-                if (cardTitle === searchName && !foundCard) {
-                    foundCard = card;
-                }
-            });
-            if (foundCard) {
-                const parentCategory = foundCard.closest('.category');
-                if (parentCategory) {
-                    parentCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            }
-        });
-    });
 });
