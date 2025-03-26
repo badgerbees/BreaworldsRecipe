@@ -57,11 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriesList.classList.toggle('visible');
     });
 
-    // Collapse the categories list when a link is clicked
+    // Collapse the categories list when a link is clicked and scroll smoothly to the section
     const categoryLinks = categoriesList.querySelectorAll('a');
     categoryLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            // Allow the anchor's default scrolling behavior, then hide the menu
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
             categoriesList.classList.remove('visible');
         });
     });
