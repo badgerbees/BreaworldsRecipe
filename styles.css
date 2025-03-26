@@ -2,20 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000; /* Base black */
     line-height: 1.6;
+    color: #f0f0f0; /* Light text for contrast */
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #0d47a1; /* Dark blue container */
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 header {
-    background-color: #3498db;
+    background-color: #0d47a1; /* Dark blue */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -26,8 +27,10 @@ header {
     max-width: 300px;
     padding: 8px;
     margin-top: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 4px;
+    background-color: #222;
+    color: #fff;
 }
 
 nav ul {
@@ -35,7 +38,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #2980b9;
+    background-color: #1565c0; /* Slightly different dark blue */
     flex-wrap: wrap;
 }
 
@@ -61,11 +64,11 @@ nav ul li a {
 }
 
 .recipe-card {
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #222;
     transition: transform 0.3s ease;
 }
 
@@ -82,7 +85,7 @@ nav ul li a {
 }
 
 .ingredient {
-    background-color: #e0e0e0;
+    background-color: #333;
     padding: 5px 10px;
     margin: 5px;
     border-radius: 4px;
@@ -90,12 +93,12 @@ nav ul li a {
 
 .plus {
     font-weight: bold;
-    color: #555;
+    color: #ccc;
     margin: 0 5px;
 }
 
 footer {
-    background-color: #3498db;
+    background-color: #0d47a1;
     color: white;
     text-align: center;
     padding: 10px;
