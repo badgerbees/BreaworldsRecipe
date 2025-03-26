@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaworlds Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Breaworlds Recipe Book</h1>
+            <input type="text" id="searchBar" placeholder="Search recipes...">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#basic-blocks">Basic Coloured Blocks</a></li>
+                <!-- More categories can be added here -->
+            </ul>
+        </nav>
+
+        <main>
+            <section id="basic-blocks" class="category">
+                <h2>Basic Coloured Blocks</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card" data-tags="red block stone brick lava">
+                        <h3>Red Block</h3>
+                        <div class="recipe-ingredients">
+                            <span class="ingredient">Stone Brick</span>
+                            <span class="plus">+</span>
+                            <span class="ingredient">Lava</span>
+                        </div>
+                    </div>
+                    <!-- More recipes can be added here -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Unofficial Breaworlds Recipe Guide</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
