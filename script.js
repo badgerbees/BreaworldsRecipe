@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(scrollTimeout);
         }
 
-        // Wait 500ms after input stops before scrolling
+        // Wait 700ms after input stops before scrolling
         scrollTimeout = setTimeout(() => {
             // Only scroll if the search term hasn't changed
             if (searchTerm === lastSearchTerm && firstMatch) {
@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     parentCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             }
-        }, 500);
+        }, 700);
     });
 });
