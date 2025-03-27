@@ -89,4 +89,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- Recipe Card Click Logic ---
+    recipeCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Add a "pop" effect by adding an active class temporarily
+            card.classList.add('active');
+            setTimeout(() => {
+                card.classList.remove('active');
+            }, 200);
+            
+            // Set the search bar's value to the card's title (h3)
+            const title = card.querySelector('h3').textContent.trim();
+            searchBar.value = title;
+            
+            // Scroll the search bar into view at the top
+            searchBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
 });
