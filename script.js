@@ -118,15 +118,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.remove('active');
             }, 200);
             
-            // Set the search bar's value to the card's title (h3)
+            // Get the card's title from its h3 element
             const title = card.querySelector('h3').textContent.trim();
-            searchBar.value = title;
             
-            // Dispatch input event so that the search logic updates immediately
+            // Clear the search bar and dispatch input event to force update
+            searchBar.value = '';
             searchBar.dispatchEvent(new Event('input'));
-
-            // Scroll the search bar into view at the top
-            searchBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // After a short delay, set the new value and dispatch input event again
+            setTimeout(() => {
+                searchBar.value = title;
+                searchBar.dispatchEvent(new Event('input'));
+                // Scroll the search bar into view at the top
+                searchBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         });
     });
 });
