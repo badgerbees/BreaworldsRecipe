@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Search & Scroll Logic ---
     const searchBar = document.getElementById('searchBar');
+    const searchInfo = document.getElementById('search-info'); // New element for showing category info
     const recipeCards = document.querySelectorAll('.recipe-card');
     let scrollTimeout;
     let lastSearchTerm = '';
@@ -8,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBar.addEventListener('input', () => {
         const searchTerm = searchBar.value.toLowerCase();
         lastSearchTerm = searchTerm;
+        
+        // Clear previous search info
+        searchInfo.textContent = '';
 
         // If the search term is empty, show all cards and cancel scrolling
         if (searchTerm.trim() === '') {
@@ -21,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let firstMatch = null;
+        let matchedCategories = new Set();
+
         recipeCards.forEach(card => {
             const tags = card.dataset.tags.toLowerCase();
             if (tags.includes(searchTerm)) {
@@ -28,10 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!firstMatch) {
                     firstMatch = card;
                 }
+                // Get the category title from the closest .category element's h2
+                const parentCategory = card.closest('.category');
+                if (parentCategory) {
+                    const categoryTitle = parentCategory.querySelector('h2').textContent.trim();
+                    matchedCategories.add(categoryTitle);
+                }
             } else {
                 card.style.display = 'none';
             }
         });
+
+        // Update the search info text below the search bar
+        if (matchedCategories.size > 0) {
+            searchInfo.textContent = 'Matching categories: ' + Array.from(matchedCategories).join(', ');
+        } else {
+            searchInfo.textContent = 'No matching categories.';
+        }
 
         if (scrollTimeout) {
             clearTimeout(scrollTimeout);
