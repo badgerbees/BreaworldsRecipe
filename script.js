@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Search & Scroll Logic ---
     const searchBar = document.getElementById('searchBar');
-    const searchInfo = document.getElementById('search-info'); // New element for showing category info
+    const searchInfo = document.getElementById('search-info'); // Element for showing category info
     const recipeCards = document.querySelectorAll('.recipe-card');
     let scrollTimeout;
     let lastSearchTerm = '';
@@ -122,6 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const title = card.querySelector('h3').textContent.trim();
             searchBar.value = title;
             
+            // Dispatch input event so that the search logic updates immediately
+            searchBar.dispatchEvent(new Event('input'));
+
             // Scroll the search bar into view at the top
             searchBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
