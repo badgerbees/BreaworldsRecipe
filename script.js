@@ -21,29 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let firstMatch = null;
-        let exactMatch = null;
         recipeCards.forEach(card => {
             const tags = card.dataset.tags.toLowerCase();
             if (tags.includes(searchTerm)) {
                 card.style.display = 'block';
-                const cardTitle = card.querySelector('h3').textContent.trim().toLowerCase();
-                // Save the first matched card (fallback)
                 if (!firstMatch) {
                     firstMatch = card;
-                }
-                // If the title exactly matches the search term, prioritize it
-                if (cardTitle === searchTerm) {
-                    exactMatch = card;
                 }
             } else {
                 card.style.display = 'none';
             }
         });
-
-        // Prioritize an exact match if it exists
-        if (exactMatch) {
-            firstMatch = exactMatch;
-        }
 
         if (scrollTimeout) {
             clearTimeout(scrollTimeout);
@@ -61,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 700);
     });
 
-    // --- Category Toggle Logic ---
+    // --- Main Category Toggle Logic ---
     const toggleButton = document.getElementById('toggle-categories');
     const categoriesList = document.getElementById('categories-list');
 
@@ -69,7 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriesList.classList.toggle('visible');
     });
 
-    // Collapse the categories list when a link is clicked and scroll smoothly to the section
+    // --- Subcategory Toggle Logic ---
+    const subcatToggles = document.querySelectorAll('.subcat-toggle');
+    subcatToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const subcatList = toggle.nextElementSibling;
+            if (subcatList && subcatList.classList.contains('subcat-list')) {
+                subcatList.classList.toggle('visible');
+            }
+        });
+    });
+
+    // --- Scroll on Category Link Click ---
     const categoryLinks = categoriesList.querySelectorAll('a');
     categoryLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -77,15 +76,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = link.getAttribute('href');
             const targetSection = document.querySelector(targetId);
             if (targetSection) {
-                // Allow the menu to collapse before scrolling
+                // Collapse categories list
                 categoriesList.classList.remove('visible');
+                // Delay a bit before scrolling
                 setTimeout(() => {
                     const targetOffset = targetSection.getBoundingClientRect().top + window.pageYOffset;
                     window.scrollTo({
                         top: targetOffset,
                         behavior: 'smooth'
                     });
-                }, 100); // Delay of 100ms before scrolling
+                }, 100);
             }
         });
     });
