@@ -115,12 +115,14 @@ footer {
 
 /* Category Toggle Adjustments */
 
-/* Hide the category list by default */
+/* Hide the category list by default and add some overall padding/margin */
 #categories-list {
     display: none;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #1565c0; /* Optional: add a subtle border */
+    border-radius: 4px;
 }
 
 /* When visible, display the list */
@@ -152,7 +154,7 @@ footer {
     display: none;
     list-style-type: none;
     padding-left: 20px;
-    margin: 5px 0;
+    margin: 10px 0;  /* Increased margin for better spacing */
 }
 
 /* When visible, display the subcategory list */
@@ -170,7 +172,8 @@ footer {
     cursor: pointer;
     width: 100%;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 10px; /* Increased margin-top for spacing */
+    margin-bottom: 5px; /* Additional bottom margin */
 }
 
 /* Hover effect for subcategory toggle buttons */
@@ -184,6 +187,7 @@ footer {
     text-decoration: none;
     display: block;
     padding: 8px 20px;
+    margin-bottom: 5px;  /* Space between links */
 }
 
 /* Recipe Card Active (Pop Effect) */
