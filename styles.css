@@ -115,25 +115,20 @@ footer {
         width: 100%;
         padding: 0 10px;
     }
-
     #searchBar {
         width: 90%;
         max-width: none;
     }
-
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-
     nav ul li {
         margin: 5px 0;
     }
-
     .recipe-grid {
         grid-template-columns: 1fr;
     }
-
     .recipe-ingredients {
         flex-direction: column;
     }
@@ -154,7 +149,7 @@ footer {
     display: block;
 }
 
-/* Style for the toggle button */
+/* Style for the main toggle button */
 #toggle-categories {
     background-color: #2980b9;
     color: white;
@@ -166,7 +161,48 @@ footer {
     text-align: left;
 }
 
-/* Hover effect for the toggle button */
+/* Hover effect for the main toggle button */
 #toggle-categories:hover {
     background-color: #3498db;
+}
+
+/* Subcategory toggles */
+
+/* Hide subcategory lists by default */
+.subcat-list {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+/* When visible, display the subcategory list */
+.subcat-list.visible {
+    display: block;
+}
+
+/* Style for subcategory toggle buttons */
+.subcat-toggle {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* Hover effect for subcategory toggle buttons */
+.subcat-toggle:hover {
+    background-color: #3498db;
+}
+
+/* Style for subcategory links */
+#categories-list a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
 }
