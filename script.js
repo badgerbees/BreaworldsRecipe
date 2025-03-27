@@ -4,13 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInfo = document.getElementById('search-info'); // Element for showing category info
     const recipeCards = document.querySelectorAll('.recipe-card');
     let scrollTimeout;
+    let searchInfoTimeout;
     let lastSearchTerm = '';
 
     searchBar.addEventListener('input', () => {
         const searchTerm = searchBar.value.toLowerCase();
         lastSearchTerm = searchTerm;
         
-        // Clear previous search info
+        // Clear any previous search info timeout
+        if (searchInfoTimeout) {
+            clearTimeout(searchInfoTimeout);
+        }
+        // Clear previous search info text immediately
         searchInfo.textContent = '';
 
         // If the search term is empty, show all cards and cancel scrolling
@@ -45,12 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update the search info text below the search bar
-        if (matchedCategories.size > 0) {
-            searchInfo.textContent = 'Matching categories: ' + Array.from(matchedCategories).join(', ');
-        } else {
-            searchInfo.textContent = 'No matching categories.';
-        }
+        // Delay the update of the search info text by 500ms
+        searchInfoTimeout = setTimeout(() => {
+            if (matchedCategories.size > 0) {
+                searchInfo.textContent = 'Matching categories: ' + Array.from(matchedCategories).join(', ');
+            } else {
+                searchInfo.textContent = 'No matching categories.';
+            }
+        }, 500);
 
         if (scrollTimeout) {
             clearTimeout(scrollTimeout);
