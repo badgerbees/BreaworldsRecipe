@@ -15,23 +15,38 @@
          <nav>
             <button id="toggle-categories">Category</button>
             <ul id="categories-list">
-               <li><a href="#basic-blocks">Basic Blocks</a></li>
-               <li><a href="#basic-coloured-blocks">Basic Coloured Blocks</a></li>
-               <li><a href="#basic-coloured-backgrounds">Basic Coloured Backgrounds</a></li>
-               <li><a href="#dark-coloured-blocks">Dark Coloured Blocks</a></li>
-               <li><a href="#wooden-items">Wooden Items</a></li>
-               <li><a href="#iron-items">Iron Items</a></li>
-               <li><a href="#metal-panels">Metal Panels</a></li>
-               <li><a href="#dark-metal-panels">Dark Metal Panels</a></li>
-               <li><a href="#plastic-blocks">Plastic Blocks</a></li>
-               <li><a href="#brick-blocks">Brick Blocks</a></li>
-               <li><a href="#coloured-glass-blocks">Coloured Glass Blocks</a></li>
-               <li><a href="#coloured-spike-blocks">Coloured Spike Blocks</a></li>
-               <li><a href="#portals">Portals</a></li>
-               <li><a href="#neon-blocks">Neon Blocks</a></li>
-               <li><a href="#neon-backgrounds">Neon Backgrounds</a></li>
-               <li><a href="#neon-platforms">Neon Platforms</a></li>
-               <li><a href="#miscellaneous">Miscellaneous</a></li>
+               <li>
+                  <button class="subcat-toggle">Blocks</button>
+                  <ul class="subcat-list">
+                     <li><a href="#basic-blocks">Basic Blocks</a></li>
+                     <li><a href="#basic-coloured-blocks">Basic Coloured Blocks</a></li>
+                     <li><a href="#dark-coloured-blocks">Dark Coloured Blocks</a></li>
+                     <li><a href="#plastic-blocks">Plastic Blocks</a></li>
+                     <li><a href="#brick-blocks">Brick Blocks</a></li>
+                     <li><a href="#coloured-glass-blocks">Coloured Glass Blocks</a></li>
+                     <li><a href="#coloured-spike-blocks">Coloured Spike Blocks</a></li>
+                     <li><a href="#neon-blocks">Neon Blocks</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <button class="subcat-toggle">Backgrounds</button>
+                  <ul class="subcat-list">
+                     <li><a href="#basic-coloured-backgrounds">Basic Coloured Backgrounds</a></li>
+                     <li><a href="#neon-backgrounds">Neon Backgrounds</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <button class="subcat-toggle">Others</button>
+                  <ul class="subcat-list">
+                     <li><a href="#wooden-items">Wooden Items</a></li>
+                     <li><a href="#iron-items">Iron Items</a></li>
+                     <li><a href="#metal-panels">Metal Panels</a></li>
+                     <li><a href="#dark-metal-panels">Dark Metal Panels</a></li>
+                     <li><a href="#portals">Portals</a></li>
+                     <li><a href="#neon-platforms">Neon Platforms</a></li>
+                     <li><a href="#miscellaneous">Miscellaneous</a></li>
+                  </ul>
+               </li>
             </ul>
          </nav>
          <main>
@@ -975,75 +990,6 @@
                   </div>
                </div>
             </section>
-            <section id="miscellaneous" class="category">
-               <h2>Miscellaneous</h2>
-               <div class="recipe-grid">
-                  <div class="recipe-card" data-tags="mailbox iron sign wooden table">
-                     <h3>Mailbox</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Iron Sign</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Wooden Table</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="donation box iron block blue glass block">
-                     <h3>Donation Box</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Iron Block</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Blue Glass Block</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="pillar stone block spike block">
-                     <h3>Pillar</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Stone Block</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Spike Block</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="dice white plastic block black plastic block">
-                     <h3>Dice</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">White Plastic Block</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Black Plastic Block</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="checkpoint iron door green portal">
-                     <h3>Checkpoint</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Iron Door</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Green Portal</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="traffic light ceiling lamp iron sign">
-                     <h3>Traffic Light</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Ceiling Lamp</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Iron Sign</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="ceiling lamp iron block glass block">
-                     <h3>Ceiling Lamp</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Iron Block</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Glass Block</span>
-                     </div>
-                  </div>
-                  <div class="recipe-card" data-tags="trampoline wooden platform mushroom">
-                     <h3>Trampoline</h3>
-                     <div class="recipe-ingredients">
-                        <span class="ingredient">Wooden Platform</span>
-                        <span class="plus">+</span>
-                        <span class="ingredient">Mushroom</span>
-                     </div>
-                  </div>
-               </div>
-            </section>
             <section id="coloured-spike-blocks" class="category">
                <h2>Coloured Spike Blocks</h2>
                <div class="recipe-grid">
@@ -1188,6 +1134,116 @@
                         <span class="ingredient">Yellow Neon Block</span>
                         <span class="plus">+</span>
                         <span class="ingredient">Iron Platform</span>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="miscellaneous" class="category">
+               <h2>Miscellaneous</h2>
+               <div class="recipe-grid">
+                  <div class="recipe-card" data-tags="mailbox iron sign wooden table">
+                     <h3>Mailbox</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Sign</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Wooden Table</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="donation box iron block blue glass block">
+                     <h3>Donation Box</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Blue Glass Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="pillar stone block spike block">
+                     <h3>Pillar</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Spike Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="dice white plastic block black plastic block">
+                     <h3>Dice</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">White Plastic Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Black Plastic Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="checkpoint iron door green portal">
+                     <h3>Checkpoint</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Door</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Green Portal</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="traffic light ceiling lamp iron sign">
+                     <h3>Traffic Light</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Ceiling Lamp</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Iron Sign</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="ceiling lamp iron block glass block">
+                     <h3>Ceiling Lamp</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Glass Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="trampoline wooden platform mushroom">
+                     <h3>Trampoline</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Wooden Platform</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Mushroom</span>
+                     </div>
+                  </div>
+                  <!-- New Recipes -->
+                  <div class="recipe-card" data-tags="spike block iron block white metal panel">
+                     <h3>Spike Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">White Metal Panel</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="marble block stone brick white brick">
+                     <h3>Marble Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">White Brick</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="granite block stone brick black brick">
+                     <h3>Granite Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Stone Brick</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Black Brick</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="solid maze block iron block spike block">
+                     <h3>Solid Maze Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Block</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Spike Block</span>
+                     </div>
+                  </div>
+                  <div class="recipe-card" data-tags="non-solid maze block iron background spike block">
+                     <h3>Non-Solid Maze Block</h3>
+                     <div class="recipe-ingredients">
+                        <span class="ingredient">Iron Background</span>
+                        <span class="plus">+</span>
+                        <span class="ingredient">Spike Block</span>
                      </div>
                   </div>
                </div>
