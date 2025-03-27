@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
     background-color: #0d47a1; /* Dark blue container */
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    padding: 0 20px;
 }
 
 header {
@@ -35,6 +36,9 @@ header {
     border-radius: 4px;
     background-color: #222;
     color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav ul {
@@ -107,31 +111,6 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
-}
-
-/* Mobile Responsiveness */
-@media screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-    #searchBar {
-        width: 90%;
-        max-width: none;
-    }
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin: 5px 0;
-    }
-    .recipe-grid {
-        grid-template-columns: 1fr;
-    }
-    .recipe-ingredients {
-        flex-direction: column;
-    }
 }
 
 /* Category Toggle Adjustments */
@@ -207,8 +186,49 @@ footer {
     padding: 8px 20px;
 }
 
+/* Recipe Card Active (Pop Effect) */
 .recipe-card.active {
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
 
+/* -----------------------------------------
+   Responsive Media Queries
+----------------------------------------- */
+
+/* For tablets and medium devices (max-width: 900px) */
+@media screen and (max-width: 900px) {
+    #searchBar {
+        width: 80%;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .recipe-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+/* For mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+    #searchBar {
+        width: 90%;
+        max-width: none;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+    .recipe-ingredients {
+        flex-direction: column;
+    }
+}
